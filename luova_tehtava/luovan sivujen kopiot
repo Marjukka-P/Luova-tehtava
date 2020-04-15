@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="luova_1sivu.css">
+  <title>Luova tehtava</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body>
+    
+
+    <div class="header">
+           
+            <h1>Luovuuden lähteillä</h1>
+          </div>
+    
+          
+          <div class="row">
+            <div class="col-2 menu">
+            <ul class="menu ul"> 
+               <li style="menu li"><a href="http://localhost/html_css/luova_tehtava/luova_2sivu.html" >Piparkakkutalo</a></li>
+               <li style="menu li"><a href="http://localhost/html_css/luova_tehtava/luova_3sivu.html" >Pieni merenneito</a></li>
+               <br>
+               <li style="menu li"><a href="http://localhost/html_css/luova_tehtava/luova4.html#tour" >Askartelua</a></li>
+              </ul>
+          </div>
+          
+          <div class="col-8">
+            <h1>Mitä luovuus on?</h1>
+            <p> Luovuus on jotain mitä on vaikea määritellä. Nopeasti ajatellen luovuuden ilmentymänä voidaan pitää taulua, laulua, korua tai taideteosta. Ja luovina 
+              ihmisinä pidetään helposti taiteilijoita, laulajia ja muita perinteisesti luovina käsitettyjä ihmisiä. 
+            </p>
+            <p>Luovuus on minusta jotain paljon enemmän. Insinöörinkin pitää olla luova, ylipäätään kaikenlainen ongelmanratkaisu vaatii luovuutta. Nettisivujen rakentelu
+              on mitä suuremmassa määrin luovaa touhua! Kiireessä luovuus usein 
+              hukkuu: huomaan miettiväni mihin katosi taitoni ajatella laajemmin ja uudella tavalla. Aivot tarvitsevatkin tyhjyyttä ja erityisesti tylsyyttä päästääkseen luovaan tilaan. 
+            </p>
+            <p>Minulle luovuus on tietynlaista flowta, joka mahdollistaa ideointia, ongelmien ratkaisua ja uusia näkökulmia. Haluaisin olla taiteellisesti luova ja 
+              lahjakas, mutta en ole. Ammatillisesti luovuus kukkii kauneimmillaan, kun on riittävästi osaamista ja taitoa nähdä kehitettävät asiat, ongelmat ja osaa etsiä 
+              niihin sopivia ratkaisuja, mutta ei ole vielä kyynistynyt ja rutiineihin juurtunut. Taiteellisella puolella ideoita ja haluja kyllä riittää, mutta toteutus. No, se ei aina ihan vastaa visiota..</p>
+              <p> Alla oleva kuva on piparkakkukylästämme. Joka joulu rakennamme lapseni ja kummityttöni kanssa piparkakkutalon tai kuten nyt, kokonaisen kylän. Tuossa mäessä
+                  yhdistyy jokaisen luovuus: joku keksi mäen, toinen miten se kuorrutetaan sokerimassalla, yksi miten se saadaan muovipussilla kohotettua ja kolmas
+                  keksi tehdä lumipalloja lopusta sinisestä massasta. Luovuus on parhaimmillaan, kun sitä toteutetaan yhdessä. 
+              </p>
+              <img src="maki.jpg" alt="maki" width="50" height="35">
+            </div>
+          </div>
+
+          
+
+
+</body>
+</html> 
+
+*********
+
+Luova1 css
+
+/* 
+Responsiivinen
+Tee W3.CSS frameworkin avulla sivustostasi responsiivinen.Voit aloittaa mobiili ensin lähestymisellä:
+ https://www.w3schools.com/w3css/w3css_mobile.asp 
+Jos haluat, niin voit käyttää myös muita frameworkkejä, kuten Bootstrap.
+Tee sivustosi o:\public kansioon, niin saat testattua sitä eri laitteilla.*/
+
+
+/* otsikko, viitataan vain <h1> */
+h1{color: darkgreen;font-style: italic;}
+
+
+  /* responsiivisen kaksilaatikkoisen sivun asetuksia*/
+  * {box-sizing: border-box;
+    background-color: grey;
+   }
+
+  /* tämä jotenkin siisti jotain??? responsiivisessa näytössä*/
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  
+[class*="col-"] {
+    float: left;
+    /*padding: 15px;*/
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* tämä määrittää sivujen fontin*/
+html {font-family:Cambria;}
+
+img {
+  width: 25%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+}
+
+ 
+    .header {
+         text-align: center;
+        color: green;
+        font-style: italic;
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .menu li {
+        padding: 8px;
+        margin-bottom: 7px;
+        background-color: green;
+        color: honeydew;
+        display: inline-block;
+        
+        }
+      
+      .menu li:hover {
+        background-color: #ce252e;
+        display: inline-block;
+      }
+      a:link {
+        background-color: green;
+        color: white;
+       
+       
+        text-align: center;
+        
+      }
+	  
+**********

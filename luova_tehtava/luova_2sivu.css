@@ -1,0 +1,104 @@
+
+
+
+/* otsikko, viitataan vain <h1> */
+h1{color: darkgreen;font-style: italic; font-size: 60px;  text-shadow: 2px 2px lightgreen;text-align: center;}
+
+/*vaalean vihreä otsikko, viitataan <h1 id="h1vaalea"> */
+#h1vaalea{color: green;}
+
+  /* responsiivisen kaksilaatikkoisen sivun asetuksia*/
+  * {box-sizing: border-box;
+    background-color: grey;
+   }
+
+
+  
+  
+[class*="col-"] {
+    float: left;
+    width: 100%;/*HUOM! tätä ei ole 1.sivulla*/
+    /*padding: 15px;*/
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+/* tämä määrittää sivujen fontin*/
+html {font-family:Cambria;}
+
+      
+      .kuva1{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        border-radius: 20px;
+        }
+        @keyframes example {
+          0%   {left:0px; top:0px;}
+          25%  {left:200px; top:0px;}
+          50%  {left:200px; top:200px;}
+          75%  {left:0px; top:200px;}
+          100% {left:0px; top:0px;}
+        }
+
+      .kuva2 {
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            display:block;
+            margin-left: auto;
+          margin-right: auto;
+            border-radius: 20px;
+          }
+
+                
+      .button {
+        background-color: #4CAF50; 
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50%;
+        margin:auto;
+           
+        
+      }
+      
+      a:link {
+        background-color: green;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 50%;
+      } 
+        p.dotted {border-style: dotted;border-color:  green;border-width: thick;}
+
+        p.rcorners3 {
+          border-radius: 25px;
+          background:green;
+          padding: 20px; 
+          width: auto;
+          height: auto;  
+        }
